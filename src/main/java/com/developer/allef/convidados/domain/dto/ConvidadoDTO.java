@@ -1,6 +1,6 @@
 package com.developer.allef.convidados.domain.dto;
 
-import com.developer.allef.convidados.domain.Convidado;
+import com.developer.allef.convidados.domain.model.Convidado;
 import lombok.Data;
 import org.modelmapper.ModelMapper;
 

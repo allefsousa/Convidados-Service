@@ -1,4 +1,4 @@
-package com.developer.allef.convidados.domain;
+package com.developer.allef.convidados.util;
 
 import lombok.Data;
 

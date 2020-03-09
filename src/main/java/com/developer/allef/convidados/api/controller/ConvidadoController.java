@@ -1,7 +1,7 @@
-package com.developer.allef.convidados.api;
+package com.developer.allef.convidados.api.controller;
 
-import com.developer.allef.convidados.domain.Convidado;
-import com.developer.allef.convidados.domain.ConvidadoService;
+import com.developer.allef.convidados.domain.model.Convidado;
+import com.developer.allef.convidados.domain.service.ConvidadoService;
 import com.developer.allef.convidados.domain.dto.ConvidadoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

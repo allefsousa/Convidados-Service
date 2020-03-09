@@ -1,7 +1,9 @@
-package com.developer.allef.convidados.domain;
+package com.developer.allef.convidados.domain.service;
 
 
 import com.developer.allef.convidados.api.exception.ObjectNotFoundException;
+import com.developer.allef.convidados.domain.model.Convidado;
+import com.developer.allef.convidados.domain.repository.ConvidadoRepository;
 import com.developer.allef.convidados.domain.dto.ConvidadoDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
