@@ -21,7 +21,8 @@ public class ConvidadoService {
     private ConvidadoRepository convidadoRepository;
 
     public ConvidadoDTO saveConvidado(Convidado convidado){
-        return  ConvidadoDTO.create(convidado);
+        logger.info("Convidado adicionado");
+        return ConvidadoDTO.create(convidadoRepository.insert(convidado));
     }
 
     public List<ConvidadoDTO> getConvidados() {
