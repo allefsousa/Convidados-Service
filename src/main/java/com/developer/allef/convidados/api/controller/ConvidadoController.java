@@ -4,6 +4,7 @@ import com.developer.allef.convidados.domain.model.Convidado;
 import com.developer.allef.convidados.domain.service.ConvidadoService;
 import com.developer.allef.convidados.domain.dto.ConvidadoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -17,6 +18,16 @@ public class ConvidadoController {
 
     @Autowired
     private ConvidadoService convidadoService;
+
+    @Value("${app.message}")
+    private String appMessage;
+
+    @GetMapping("/message")
+    public String getAppMessage(){
+        return  appMessage;
+    }
+
+
 
     @GetMapping
     public ResponseEntity<List<ConvidadoDTO>> getConvidados(){
